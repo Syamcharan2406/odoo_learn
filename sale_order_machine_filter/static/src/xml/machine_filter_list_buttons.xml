@@ -1,6 +1,41 @@
-<templates id="template" xml:space="preserve">
-    <t t-name="sale_order_machine_filter">
-        <button type="button" class="btn btn-secondary o_button_ac">AC</button>
-        <button type="button" class="btn btn-secondary o_button_eng">ENG</button>
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <!-- Inherit base ListView buttons -->
+    <t t-name="sale.SaleOrderListView.Buttons"
+       t-inherit="web.ListView.Buttons"
+       t-inherit-mode="primary">
+        <xpath expr="." position="inside">
+            <t t-call="sale.SaleOrderCustomButtons"/>
+        </xpath>
     </t>
+
+    <!-- Define custom buttons -->
+    <t t-name="sale.SaleOrderCustomButtons">
+        <div class="d-flex gap-2 ms-2">
+            <button class="btn btn-warning"
+                    t-on-click="() => this.onDebugClick()">
+                Debug
+            </button>
+        </div>
+    </t>
+
+
+
+    <t t-name="sale.SaleOrderListView"
+       t-inherit="web.ListView"
+       t-inherit-mode="primary">
+
+        <!-- Placeholder to add custom buttons before 'Create' -->
+        <xpath expr="//button[hasclass('o_list_button_add')]" position="before">
+            <!-- Custom sale order buttons can be added here -->
+        </xpath>
+
+        <!-- Example of adding custom attributes to Renderer -->
+        <xpath expr="//t[@t-component='props.Renderer']" position="attributes">
+            <!-- You can bind controller functions later if needed -->
+            <!-- Example: <attribute name="customAction.bind">customAction</attribute> -->
+        </xpath>
+    </t>
+
 </templates>

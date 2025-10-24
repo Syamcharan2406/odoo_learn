@@ -2,7 +2,7 @@
     <record id="view_order_tree_inherit_machine_filter" model="ir.ui.view">
         <field name="name">sale.order.tree.machine.filter</field>
         <field name="model">sale.order</field>
-        <field name="inherit_id" ref="sale.sale_order_tree"/>
+        <field name="inherit_id" ref="sale.view_quotation_tree_with_onboarding"/>
         <field name="arch" type="xml">
             <xpath expr="//list" position="attributes">
                 <attribute name="js_class">sale_order_machine_filter</attribute>
@@ -17,7 +17,7 @@
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='payment_term_id']" position="after">
-                <field name="machine_type"/>
+                <field name="product_type"/>
             </xpath>
         </field>
     </record>

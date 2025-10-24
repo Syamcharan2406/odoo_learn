@@ -2,7 +2,7 @@
     'name': "Sale Order Machine Filter",
     'summary': "Adds AC/ENG filter buttons to Sales Orders list view",
     'version': '1.0',
-    'author': "Adil Akbar",
+    'author': "Syam",
     'depends': ['web', 'sale_management'],
     'data': [
         'views/sale_order_view.xml',
