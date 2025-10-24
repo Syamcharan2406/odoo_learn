@@ -1,0 +1,6 @@
+<templates id="template" xml:space="preserve">
+    <t t-name="sale_order_machine_filter">
+        <button type="button" class="btn btn-secondary o_button_ac">AC</button>
+        <button type="button" class="btn btn-secondary o_button_eng">ENG</button>
+    </t>
+</templates>

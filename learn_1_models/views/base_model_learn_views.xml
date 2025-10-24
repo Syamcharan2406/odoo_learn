@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_base_model_learn_list" model="ir.ui.view">
+        <field name="name">base.model.learn.list</field>
+        <field name="model">base.model.learn</field>
+        <field name="arch" type="xml">
+            <list string="Base Model Learn">
+                <field name="name"/>
+                <field name="syam_charan"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_base_model_learn_form" model="ir.ui.view">
+        <field name="name">base.model.learn.form</field>
+        <field name="model">base.model.learn</field>
+        <field name="arch" type="xml">
+            <form string="Base Model Learn">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="syam_charan"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <!-- Menu and Action -->
+    <record id="action_base_model_learn" model="ir.actions.act_window">
+        <field name="name">Base Model Learn</field>
+        <field name="res_model">base.model.learn</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+</odoo>

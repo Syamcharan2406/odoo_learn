@@ -1,0 +1,154 @@
+# -------------------------
+# Python / Odoo ignores
+# -------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+env_old/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+test-reports/
+
+# Translations
+*.mo
+
+# Django stuff (if used with Odoo)
+*.log
+local_settings.py
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SQL database
+*.db
+*.sqlite3
+
+# -------------------------
+# Odoo specific ignores
+# -------------------------
+# Configuration
+odoo.conf
+*.conf
+
+# Compiled addons and assets
+addons/*/__pycache__/
+addons/*/static/lib/
+addons/*/static/.web.assets*
+addons/*/static/build/
+addons/*/static/src/scss/.sass-cache/
+addons/*/i18n/*.pot
+*.zip
+*.tar.gz
+
+# Logs and runtime files
+*.log
+*.pid
+*.seed
+*.xls*
+*.xlsx
+*.ods
+*.pdf
+*.tmp
+
+# Odoo sessions, filestore, etc.
+sessions/
+filestore/
+*.session
+*.rdb
+*.swp
+*.swo
+
+# Custom auto-generated data
+*.bak
+*.orig
+*.rej
+
+# -------------------------
+# IDE / OS files
+# -------------------------
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# VSCode (optional)
+.vscode/
+
+# Mac / Linux / Windows system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.Trashes
+.cache/
+*.swp
+*~
+
+# -------------------------
+# Other project specific
+# -------------------------
+# If you use docker
+*.env
+docker-compose.override.yml
+*.pid
+logs/
