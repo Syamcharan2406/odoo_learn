@@ -13,9 +13,16 @@
     <!-- Define custom buttons -->
     <t t-name="sale.SaleOrderCustomButtons">
         <div class="d-flex gap-2 ms-2">
-            <button class="btn btn-warning"
-                    t-on-click="() => this.onDebugClick()">
-                Debug
+            <button type="button"
+                    class="btn btn-outline-secondary"
+                    t-on-click="() => this.filterByProductType('aircraft')">
+                Aircraft
+            </button>
+
+            <button type="button"
+                    class="btn btn-outline-secondary"
+                    t-on-click="() => this.filterByProductType('engine')">
+                Engine
             </button>
         </div>
     </t>
