@@ -24,7 +24,7 @@ class CommonMixin(models.AbstractModel):
 class Student(models.Model):
     _name = 'school.student'
     _description = 'Student Information'
-    _inherit = ['common.mixin']  # Inherit abstract model
+    _inherit = ['common.mixin','mail.thread', 'mail.activity.mixin']  # Inherit abstract model
 
     name = fields.Char(required=True)
     age = fields.Integer()

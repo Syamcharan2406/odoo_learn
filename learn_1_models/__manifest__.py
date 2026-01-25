@@ -7,6 +7,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/base_model_learn_views.xml',
+        'views/students_views.xml',
         'views/menus.xml',
     ],
     'installable': True,
