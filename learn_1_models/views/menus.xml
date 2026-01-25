@@ -1,5 +1,5 @@
 <odoo>
-        <menuitem id="menu_base_model_learn_root" name="Base Model Learn"/>
+        <menuitem id="menu_base_model_learn_root" web_icon="learn_1_models,static/description/icon.png" name="Base Model Learn"/>
         <menuitem id="menu_base_model_learn" name="Records" parent="menu_base_model_learn_root"
               action="action_base_model_learn"/>
 </odoo>
