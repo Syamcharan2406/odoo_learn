@@ -1,0 +1,5 @@
+<odoo>
+        <menuitem id="menu_owl_model_learn_root" web_icon="owl_learning,static/description/icon.png" name="owl Model Learn"/>
+        <menuitem id="menu_owl_model_learn" name="Records" parent="menu_owl_model_learn_root"
+              action="action_owl_model_learn"/>
+</odoo>

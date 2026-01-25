@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_owl_model_learn_list" model="ir.ui.view">
+        <field name="name">owl.model.learn.list</field>
+        <field name="model">owl.model.learn</field>
+        <field name="arch" type="xml">
+            <list string="Owl Model Learn">
+                <field name="name"/>
+                <field name="notes"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_owl_model_learn_form" model="ir.ui.view">
+        <field name="name">owl.model.learn.form</field>
+        <field name="model">owl.model.learn</field>
+        <field name="arch" type="xml">
+            <form string="Owl Model Learn">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <notebook>
+                        <page string="Owl practice" name="owl_practice">
+                            <div>
+                                Hello! This page is for owl practice.
+                            </div>
+                        </page>
+                        <page string="Notes" name="notes">
+                            <group>
+                                <field colspan="2" name="notes" nolabel="1" placeholder="This note is only for internal purposes."/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <!-- Menu and Action -->
+    <record id="action_owl_model_learn" model="ir.actions.act_window">
+        <field name="name">Owl Model Learn</field>
+        <field name="res_model">owl.model.learn</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+</odoo>
