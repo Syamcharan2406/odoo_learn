@@ -1,7 +1,7 @@
 {
     'name': 'Base Model Learn',
     'version': '1.0',
-    'category': 'Custom',
+    'category': 'Syam',
     'summary': 'Simple model example for learning',
     'depends': ['base', 'mail'],
     'data': [

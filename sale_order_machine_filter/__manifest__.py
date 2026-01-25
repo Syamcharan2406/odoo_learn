@@ -4,6 +4,7 @@
     'version': '1.0',
     'author': "Syam",
     'depends': ['web', 'sale_management'],
+    'category': 'Syam',
     'data': [
         'views/sale_order_view.xml',
     ],
