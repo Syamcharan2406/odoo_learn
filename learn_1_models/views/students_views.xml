@@ -21,6 +21,13 @@
                         <field name="name"/>
                         <field name="age"/>
                     </group>
+                    <notebook>
+                        <page string="Notes" name="notes">
+                            <group>
+                                <field colspan="2" name="notes" nolabel="1" placeholder="This note is only for internal purposes."/>
+                            </group>
+                        </page>
+                    </notebook>
                 </sheet>
                 <chatter/>
             </form>

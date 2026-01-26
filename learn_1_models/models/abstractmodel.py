@@ -6,7 +6,7 @@ class CommonMixin(models.AbstractModel):
 
     # Example fields that inheriting models will get
     active = fields.Boolean(default=True)
-    notes = fields.Text(string='Notes')
+    notes = fields.Html(string='Notes')
 
     # Example method that can be used by other models
     def toggle_active(self):
